@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	counter-reset : section;
+}
+h1{
+	counter-reset: subsection;
+}
+h1::before{
+	counter-increment: section;
+	content: "Section " counter(section) ".";
+}
+h2::before{
+	counter-increment: subsection;
+	content:  counter(section) "." counter(subsection) " ";
+}
+</style>
+<body>
+<h1>Java Technology</h1>
+<h2>Core Java</h2>
+<h2>Servlet</h2>
+<h2>JSP</h2>
+<h2>Spring</h2>
+<h1>Web Technology</h1>
+<h2>HTML 5</h2>
+<h2>CSS 3</h2>
+<h2> jQuery</h2>
+
+</body>
+</html>
+	

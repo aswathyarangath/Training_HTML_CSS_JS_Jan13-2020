@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!----------------Moving rectangles---------->
+<html>
+<head>
+<style>
+div{
+	width : 100px;
+	height : 100px;
+	background : red;
+	position : relative;
+	-webkit-animation : myfirst 5s;
+	animation : myfirst 5s;
+}
+@-webkit-keyframes myfirst{
+	100% {background: red; left: 0px; top : 0px;}
+	75% {background: yellow; left: 300px; top : 0px;}
+	50% {background: blue; left: 200px; top : 300px;}
+	25% {background: green; left: 0px; top : 200px;}
+	0% {background: red; left: 0px; top : 0px;}
+}
+</style>
+</head>
+<body>
+<p><b>Note:</b> The IE9 and earlier versions donot support CSS3 animation property.</p>
+<div></div>
+</body>
+</html>
